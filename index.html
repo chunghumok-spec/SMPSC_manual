@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>위기개입 매뉴얼</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    background: #f4f2f8;
+  }
+  header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e0ee;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  header h1 {
+    font-size: 17px;
+    margin: 0;
+    color: #3d2f5c;
+    font-weight: 600;
+  }
+  header a {
+    font-size: 13px;
+    color: #7a5fb5;
+    text-decoration: none;
+    border: 1px solid #d8cdec;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #f9f7fd;
+    white-space: nowrap;
+  }
+  header a:hover {
+    background: #efe9f9;
+  }
+  .viewer-wrap {
+    height: calc(100vh - 53px);
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+  .fallback {
+    padding: 40px 20px;
+    text-align: center;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>한눈에 보는 매뉴얼 맵</h1>
+  <a href="manual.pdf" download>PDF 다운로드</a>
+</header>
+
+<div class="viewer-wrap">
+  <iframe src="manual.pdf" title="한눈에 보는 매뉴얼 맵 PDF">
+    <div class="fallback">
+      <p>이 브라우저에서는 PDF를 바로 표시할 수 없습니다.</p>
+      <a href="manual.pdf">여기를 눌러 PDF 열기</a>
+    </div>
+  </iframe>
+</div>
+
+</body>
+</html>
